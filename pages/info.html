@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 웹페이지 제목 -->
+    <title>Cake</title>
+
+    <!-- 부트스트랩 cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- css스타일 파일 링크 -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- 구글 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gugi&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+    <body style="padding-top: 30px">
+        <!-- 네비게이션 영역 시작 -->
+        <nav class="navbar bg-white fixed-top">
+            <div class="container-fluid">
+                <div class="row w-100 align-items-center">
+
+                    <!-- 로고 영역 -->
+                    <div class="col-2">
+                        <a class="navbar-brand" href="../index.html">
+                            SWU Dessert
+                        </a>
+                    </div>
+
+                    <!-- 메뉴 영역 -->
+                    <div class="col-10">
+                        <ul class="nav nav-underline justify-content-evenly">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">회사소개</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#info-member">회원가입</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#info-image">이미지출처</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <!-- 네비게이션 영역 끝 -->
+
+        <!-- 회사소개 영역 시작 -->
+        <section id="info-compony" class="pb-5">
+            <!-- 소제목 -->
+            <div class="text-center py-5">
+                <h2 class="fw-bold mb-3">About us</h2>
+            </div>
+
+            <!-- 사진과 프로필` -->
+            <div class="row justify-content-center align-items-center mb-5">
+                <div class="col-md-5 ms-lg-4">  
+                    <img src="../images/chef.jpg" alt="쉐프 프로필 사진" class="img-fluid">
+                </div>
+                <div class="col-md-7 col-lg-5 px-lg-5">
+                    <h3 class="fw-bold mb-3">Pastry Chef. Swu nee</h3>
+                    <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at sequi, reprehenderit praesentium similique cum quos aut rem quaerat perspiciatis delectus perferendis dolorem aliquam tenetur.</p>
+                    <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at sequi, reprehenderit praesentium similique cum quos aut rem quaerat perspiciatis delectus perferendis dolorem aliquam tenetur.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center g-4 mb-5">
+                <!-- 회사 소개 카드 -->
+                <div class="col-lg-6 me-lg-5">
+                    <div class="card border-0 shadow-sm p-5 h-100">
+
+                        <h3 class="fw-bold mb-3">SWU Dessert</h3>
+
+                        <p class="lh-lg text-muted">
+                            고객들에게 달콤한 행복을 전하기 위해 매일 직접 만든 케이크,
+                            구움과자, 빵, 캔디 등을 판매하고 있으며, 품질 좋은 재료와
+                            깔끔한 제조 과정을 통해 믿고 즐길 수 있는 디저트를 만들고 있습니다.
+                        </p>
+
+                        <p class="lh-lg text-muted mb-0">
+                            SWU Dessert는 앞으로도 맛과 품질을 최우선으로 생각하며
+                            고객들에게 즐거운 디저트 경험을 제공하기 위해 노력하겠습니다.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- SNS 카드 -->
+                <div class="col-lg-3 ms-lg-5">
+                    <div class="card border-0 shadow-sm p-4 h-100 text-center">
+
+                        <h3 class="fw-bold mb-4">SNS</h3>
+
+                        <div class="d-flex justify-content-center gap-4">
+
+                            <a href="#" class="social-icon text-dark">
+                                <i class="bi bi-youtube fs-1"></i>
+                            </a>
+
+                            <a href="#" class="social-icon text-dark">
+                                <i class="bi bi-instagram fs-1"></i>
+                            </a>
+
+                            <a href="#" class="social-icon text-dark">
+                                <i class="bi bi-threads fs-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 회사소개 영역 끝 -->
+
+        <!-- 회원가입 영역 시작 -->
+        <section id="info-member" class="pb-5">
+            <!-- 소제목 -->
+            <div class="text-center py-5">
+                <h2 class="fw-bold mb-3">Join the Membership</h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card shadow-0 border-0 p-4">
+                        <form>
+                            <!-- 이름 -->
+                            <div class="mb-3">
+                                <label class="form-label">이름</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <!-- 아이디 -->
+                            <div class="mb-3">
+                                <label class="form-label">아이디</label>
+                                <input type="text" class="form-control" placeholder="영문 + 숫자를 조합한 6~12자">
+                            </div>
+
+                            <!-- 비밀번호 -->
+                            <div class="mb-3">
+                                <label class="form-label">비밀번호</label>
+                                <input type="password" class="form-control" placeholder="영문 + 숫자 + 특수기호를 조합한 10~20자">
+                            </div>
+
+                            <!-- 비밀번호 확인 -->
+                            <div class="mb-3">
+                                <label class="form-label">비밀번호 확인</label>
+                                <input type="password" class="form-control">
+                            </div>
+
+                            <!-- 이메일 -->
+                            <div class="mb-3">
+                                <label class="form-label">이메일</label>
+                                <input type="email" class="form-control">
+                            </div>
+
+                            <!-- 전화번호 -->
+                            <div class="mb-4">
+                                <label class="form-label">전화번호</label>
+
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="010">
+                                    </div>
+
+                                    <div class="col-auto">-</div>
+
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="0000">
+                                    </div>
+
+                                    <div class="col-auto">-</div>
+
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="0000">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 약관 -->
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="agree">
+                                <label class="form-check-label" for="agree">
+                                    개인정보 수집 및 이용에 동의합니다.
+                                </label>
+                            </div>
+
+                            <!-- 가입 버튼 -->
+                            <div class="d-grid">
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#joinModal">회원가입</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 회원가입 영역 끝 -->
+
+        <!-- 팝업창 영역 시작 -->
+        <div class="modal fade" id="joinModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">회원가입 완료</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        SWU Dessert 회원가입이 완료되었습니다.
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 팝업창 영역 끝 -->
+
+        <!-- 이미지 출처 영역 시작 -->
+        <section id="info-image">
+            <!-- 소제목 -->
+            <div class="text-center py-5">
+                <h2 class="fw-bold mb-3">Image Source</h2>
+            </div>
+
+            <div class="table-responsive">
+
+                <table class="table table-striped table-hover align-middle">
+
+                    <thead class="table-dark">
+                        <tr>
+                            <th class="w-25">이미지명</th>
+                            <th>출처</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>baked-goods1.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/biscuit-cookie-heart-love-symbol-9553855/" target="_blank">
+                                    https://pixabay.com/photos/biscuit-cookie-heart-love-symbol-9553855/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>baked-goods2.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/fluted-pastry-bordeaux-6798565/" target="_blank">
+                                    https://pixabay.com/photos/fluted-pastry-bordeaux-6798565/
+                                </a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>baked-goods3.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/cookies-gingerbread-christmas-3918049/" target="_blank">
+                                    https://pixabay.com/photos/cookies-gingerbread-christmas-3918049/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>baked-goods4.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/baked-goods-julian-financier-1405317/" target="_blank">
+                                    https://pixabay.com/photos/baked-goods-julian-financier-1405317/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>baked-goods5.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/madeleine-cherry-blossoms-683743/" target="_blank">
+                                    https://pixabay.com/photos/madeleine-cherry-blossoms-683743/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>baked-goods6.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/cookies-pastries-biscuits-1886760/" target="_blank">
+                                    https://pixabay.com/photos/cookies-pastries-biscuits-1886760/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>baked-goods7.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/macaroons-sweets-macarons-5510757/" target="_blank">
+                                    https://pixabay.com/photos/macaroons-sweets-macarons-5510757/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>baked-goods8.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/cookie-cookies-chocolate-pieces-4245030/" target="_blank">
+                                    https://pixabay.com/photos/cookie-cookies-chocolate-pieces-4245030/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>bread1.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/cinnamon-roll-cinnamon-bread-pastry-4719023/" target="_blank">
+                                    https://pixabay.com/photos/cinnamon-roll-cinnamon-bread-pastry-4719023/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>bread2.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/baked-breads-basket-bread-basket-2313462/" target="_blank">
+                                    https://pixabay.com/photos/baked-breads-basket-bread-basket-2313462/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>bread3.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/loaf-bakery-preparation-fresh-bread-2436370/" target="_blank">
+                                    https://pixabay.com/photos/loaf-bakery-preparation-fresh-bread-2436370/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>bread4.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/bread-arabic-bread-market-tunisia-534963/" target="_blank">
+                                    https://pixabay.com/photos/bread-arabic-bread-market-tunisia-534963/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>bread5.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/bread-bread-rolls-marmalade-snack-6686671/" target="_blank">
+                                    https://pixabay.com/photos/bread-bread-rolls-marmalade-snack-6686671/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>bread6.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/bread-croissant-morning-puff-paste-1284438/" target="_blank">
+                                    https://pixabay.com/photos/bread-croissant-morning-puff-paste-1284438/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>bread7.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/bread-slices-organic-healthy-5671124/" target="_blank">
+                                    https://pixabay.com/photos/bread-slices-organic-healthy-5671124/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>bread8.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/donut-food-sweets-snack-plate-2590583/" target="_blank">
+                                    https://pixabay.com/photos/donut-food-sweets-snack-plate-2590583/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>cake1.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/strawberry-roll-strawberry-1263099/" target="_blank">
+                                    https://pixabay.com/photos/strawberry-roll-strawberry-1263099/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>cake2.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/illustrations/cakes-dessert-cute-food-pastries-8858652/" target="_blank">
+                                    https://pixabay.com/illustrations/cakes-dessert-cute-food-pastries-8858652/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>cake3.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/wedding-cake-fruit-yummy-cream-5373757/" target="_blank">
+                                    https://pixabay.com/photos/wedding-cake-fruit-yummy-cream-5373757/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>cake4.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/tart-raspberry-tart-dessert-cake-7322951/" target="_blank">
+                                    https://pixabay.com/photos/tart-raspberry-tart-dessert-cake-7322951/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>cake5.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/cake-carrot-cake-cake-stand-dessert-4890393/" target="_blank">
+                                    https://pixabay.com/photos/cake-carrot-cake-cake-stand-dessert-4890393/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>cake6.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/almond-buttercream-layer-cake-cake-899225/" target="_blank">
+                                    https://pixabay.com/photos/almond-buttercream-layer-cake-cake-899225/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>cake7.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/cake-chocolate-cake-christmas-9105466/" target="_blank">
+                                    https://pixabay.com/photos/cake-chocolate-cake-christmas-9105466/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>cake8.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/pie-desserts-strawberry-rose-4074138/" target="_blank">
+                                    https://pixabay.com/photos/pie-desserts-strawberry-rose-4074138/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>candy1.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/sweets-delicacies-candy-green-2639958/" target="_blank">
+                                    https://pixabay.com/photos/sweets-delicacies-candy-green-2639958/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>candy2.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/valentine-candy-hearts-conversation-626446/" target="_blank">
+                                    https://pixabay.com/photos/valentine-candy-hearts-conversation-626446/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>candy3.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/marshmallows-sweets-candy-sugar-6567817/" target="_blank">
+                                    https://pixabay.com/photos/marshmallows-sweets-candy-sugar-6567817/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>candy4.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/lollipops-candy-candies-colors-602441/" target="_blank">
+                                    https://pixabay.com/photos/lollipops-candy-candies-colors-602441/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>candy5.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/old-candy-candy-berries-sweets-2894227/" target="_blank">
+                                    https://pixabay.com/photos/old-candy-candy-berries-sweets-2894227/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>candy6.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/chocolate-sweet-candy-551424/" target="_blank">
+                                    https://pixabay.com/photos/chocolate-sweet-candy-551424/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>candy7.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/candy-confectionery-sweet-smarties-50838/" target="_blank">
+                                    https://pixabay.com/photos/candy-confectionery-sweet-smarties-50838/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>candy8.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/jelly-beans-jelly-sweets-jelly-candy-321186/" target="_blank">
+                                    https://pixabay.com/photos/jelly-beans-jelly-sweets-jelly-candy-321186/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>chef.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/chef-female-chef-cook-8614629/" target="_blank">
+                                    https://pixabay.com/photos/chef-female-chef-cook-8614629/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>coupon.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/illustrations/ai-generated-coupon-offer-price-9120372/" target="_blank">
+                                    https://pixabay.com/illustrations/ai-generated-coupon-offer-price-9120372/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>main1.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/illustrations/ai-generated-cake-pastry-shop-food-8758588/" target="_blank">
+                                    https://pixabay.com/illustrations/ai-generated-cake-pastry-shop-food-8758588/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>main2.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/ice-cream-candy-food-dessert-sweet-5409069/" target="_blank">
+                                    https://pixabay.com/photos/ice-cream-candy-food-dessert-sweet-5409069/
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>main3.jpg</td>
+                            <td>
+                                <a href="https://pixabay.com/photos/bakery-breads-assorted-assortment-1868925/" target="_blank">
+                                    https://pixabay.com/photos/bakery-breads-assorted-assortment-1868925/
+                                </a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        </section>
+        <!-- 이미지 출처 영역 끝 -->
+
+        <!-- 부트스트랩 cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+
+</html>

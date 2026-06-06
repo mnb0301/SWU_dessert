@@ -1,0 +1,124 @@
+body {
+    font-family: "black-han-sans-regular", sans-serif;
+}
+
+h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: "Oswald", sans-serif;
+}
+
+#info {
+    border-top: 1px solid #d2d2d2;
+}
+
+#info-member, #info-image, #info-compony {
+    scroll-margin-top: 80px;
+}
+
+
+.search-form {
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+    right: 16px;
+}
+
+.form-control {
+    border-color: black;
+}
+
+.nav-link {
+    color: gray;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.navbar-brand {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.offcanvas-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+.main-banner {
+    height: 765px;
+    object-fit: cover;
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .show > .nav-link {
+    color: black;
+    border-bottom-color: black;
+}
+
+.nav-link:focus,
+.nav-link:active {
+    color: black;
+}
+
+.product-img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.product-img:hover {
+    opacity: 0.5;
+}
+
+.product-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.product-price {
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.product-detail {
+    padding-right: 50px;
+}
+
+.product-quantity {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.product-delivery {
+    margin-bottom: 50px;
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.detail-img {
+    height: 600px;
+    object-fit: cover;
+}
