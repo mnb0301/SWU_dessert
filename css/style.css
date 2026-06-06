@@ -10,8 +10,9 @@ h2 {
 }
 
 /* 글꼴 */
-h3 {
+h3, h5 {
     font-family: "Oswald", sans-serif;
+    font-weight: bold;
 }
 
 /* footer 구분선 */
@@ -134,4 +135,9 @@ h3 {
 .detail-img {
     height: 600px;
     object-fit: cover;
+}
+
+.btn-dark,
+.btn-outline-dark {
+    transition: 0.3s;
 }

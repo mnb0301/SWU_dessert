@@ -157,16 +157,32 @@
                         </div>
 
                         <!-- 구매 버튼 영역 -->
-                        <div class="purchase-button d-grid">
-                            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#purchaseModal">구매하기</button>
+                        <div class="purchase-button">
+                            <div class="row g-2">
+                                <div class="col">
+                                    <button class="btn btn-outline-dark w-100"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#cartModal">
+                                        장바구니
+                                    </button>
+                                </div>
+
+                                <div class="col">
+                                    <button class="btn btn-dark w-100"data-bs-toggle="modal"data-bs-target="#purchaseModal">
+                                        구매하기
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- 상품 상세 페이지 영역 끝 -->
+        <!-- 상품 상세 페이지 영역 끝 -->s
 
         <!-- 팝업창 영역 시작 -->
+
+        <!-- 구매하기 팝업창 -->
         <div class="modal fade" id="purchaseModal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -186,8 +202,54 @@
                 </div>
             </div>
         </div>
-        <!-- 팝업창 영역 끝 -->
 
+        <!-- 장바구니 팝업창 -->
+        <div class="modal fade" id="cartModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">장바구니</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        상품이 장바구니에 담겼습니다.
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                            확인
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 팝업창 영역 끝 -->
+         
+        <!-- 상세 설명 영역 시작 -->
+        <section class="container-fluid mb-5">
+            <div class="row">
+                <div class="col-lg-7 offset-lg-1" style="margin-left:150px;">
+
+                    <h5>상품 설명</h5>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quod.
+                    </p>
+
+                    <h5 class="mt-4">주요 재료</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+                    <h5 class="mt-4">알레르기 정보</h5>
+                    <p>Lorem ipsum dolor sit.</p>
+
+                </div>
+            </div>
+        </section>
+        <!-- 상세 설명 영역 끝 -->
+         
         <!-- 푸터 영역 시작 -->
         <footer id="info" class="py-3">
             <div class="container">
